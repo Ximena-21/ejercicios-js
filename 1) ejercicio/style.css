@@ -1,0 +1,18 @@
+.texto{
+    font-size: 20px;
+    color: rebeccapurple;
+    background-color: salmon;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.red{
+    color: red;
+}
+
+.yellow{
+    color: sandybrown;
+}
