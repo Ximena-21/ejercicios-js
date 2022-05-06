@@ -6,79 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cotizador</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oleo+Script+Swash+Caps:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="msmWelcome">
-        <p>
-            Bienvenido a Alana´s Grooming & Pet Shop
-        </p>
-    </div>
-    <div class="containerBox">    
-        <label class="singIn" for="">Ingresa tu nombre</label>
-        <input class="sigIn_fullname" type="text" name="Fullname" id="fullname" placeholder="Tu nombre"> 
-        <div class="container-cotizacion">
-            <div class="container-Services">
-                <select name="services1" id="services1">
-                    <option value="bañoSeco">Baño Seco</option>
-                    <option value="bañoInsect">Baño Insecticida</option>
-                    <option value="bañoPel">Baño y Peluqueria</option>
-                    <option value="bañoHidra">Baño hidratante</option>
-                    <option value="uñas">Corte de uñas</option>
-                    <option value="oidos">Limpieza de oidos</option>
-                    <option value="restauracion">Restauracion de manto</option>
-                    <option value="dientes">Limpieza de dientes</option>
-                </select>
-                <input type="number" name="number1" id="number1">
-            </div>    
-            <div class="container-Services">
-                <select name="services2" id="services2">
-                    <option value="bañoSeco">Baño Seco</option>
-                    <option value="bañoInsect">Baño Insecticida</option>
-                    <option value="bañoPel">Baño y Peluqueria</option>
-                    <option value="bañoHidra">Baño hidratante</option>
-                    <option value="uñas">Corte de uñas</option>
-                    <option value="oidos">Limpieza de oidos</option>
-                    <option value="restauracion">Restauracion de manto</option>
-                    <option value="dientes">Limpieza de dientes</option>
-                </select>
-                <input type="number" name="number2" id="number2">
-            </div>    
-            <div class="container-Services">
-                <select name="services3" id="services3">
-                    <option value="bañoSeco">Baño Seco</option>
-                    <option value="bañoInsect">Baño Insecticida</option>
-                    <option value="bañoPel">Baño y Peluqueria</option>
-                    <option value="bañoHidra">Baño hidratante</option>
-                    <option value="uñas">Corte de uñas</option>
-                    <option value="oidos">Limpieza de oidos</option>
-                    <option value="restauracion">Restauracion de manto</option>
-                    <option value="dientes">Limpieza de dientes</option>
-                </select>
-                <input type="number" name="number3" id="number3">
-            </div>    
-            <div class="container-Services">
-                <select name="services4" id="services4">
-                    <option value="bañoSeco">Baño Seco</option>
-                    <option value="bañoInsect">Baño Insecticida</option>
-                    <option value="bañoPel">Baño y Peluqueria</option>
-                    <option value="bañoHidra">Baño hidratante</option>
-                    <option value="uñas">Corte de uñas</option>
-                    <option value="oidos">Limpieza de oidos</option>
-                    <option value="restauracion">Restauracion de manto</option>
-                    <option value="dientes">Limpieza de dientes</option>
-                </select>
-                <input type="number" name="number4" id="number4">
-            </div>   -->
+<body class="container">
+    <div class="sectionPpal">
+        <div class="msmWelcome">
+            <h1>
+                Bienvenido a Alana's Grooming & Pet Shop
+            </h1>
+            <img src="./images/logo.png" alt="logo alanas">
         </div>
-    </div>  
-    <button class="btn-cotizar">Cotizar</button>  
-    <div class="cotizacion">
-        <span class=" subTotal1"></span>  
-        <span class=" subTtotal2"></span>  
-        <span class=" subTotal3"></span>  
-        <span class=" subTotal4"></span>  
-        <span class=" total"></span>  
-    </div>
+        <div class="containerBox">    
+           <!--  <label class="singIn" for="">Ingresa tu nombre</label> -->
+            <input class="singIn_fullname" type="text" name="Fullname" id="fullname" placeholder="Ingresa tu nombre"> 
+        </div>  
+        <div class="container-cotizacion">
+                <div class="container-Services">
+                    <select class="selectServices" name="services1" id="services1">
+                        <option value="bañoSeco">Baño Seco</option>
+                        <option value="bañoInsect">Baño Insecticida</option>
+                        <option value="bañoPel">Baño y Peluqueria</option>
+                        <option value="bañoHidra">Baño hidratante</option>
+                        <option value="uñas">Corte de uñas</option>
+                        <option value="oidos">Limpieza de oidos</option>
+                        <option value="restauracion">Restauracion de manto</option>
+                        <option value="dientes">Limpieza de dientes</option>
+                    </select>
+                    <input class="inputNumber" type="number" name="number1" id="number1">
+                </div>    
+                <div class="container-Services">
+                    <select class="selectServices" name="services2" id="services2">
+                        <option value="bañoSeco">Baño Seco</option>
+                        <option value="bañoInsect">Baño Insecticida</option>
+                        <option value="bañoPel">Baño y Peluqueria</option>
+                        <option value="bañoHidra">Baño hidratante</option>
+                        <option value="uñas">Corte de uñas</option>
+                        <option value="oidos">Limpieza de oidos</option>
+                        <option value="restauracion">Restauracion de manto</option>
+                        <option value="dientes">Limpieza de dientes</option>
+                    </select>
+                    <input class="inputNumber" type="number" name="number2" id="number2">
+                </div>    
+                <div class="container-Services">
+                    <select class="selectServices" name="services3" id="services3">
+                        <option value="bañoSeco">Baño Seco</option>
+                        <option value="bañoInsect">Baño Insecticida</option>
+                        <option value="bañoPel">Baño y Peluqueria</option>
+                        <option value="bañoHidra">Baño hidratante</option>
+                        <option value="uñas">Corte de uñas</option>
+                        <option value="oidos">Limpieza de oidos</option>
+                        <option value="restauracion">Restauracion de manto</option>
+                        <option value="dientes">Limpieza de dientes</option>
+                    </select>
+                    <input class="inputNumber" type="number" name="number3" id="number3">
+                </div>    
+                <div class="container-Services">
+                    <select class="selectServices" name="services4" id="services4">
+                        <option value="bañoSeco">Baño Seco</option>
+                        <option value="bañoInsect">Baño Insecticida</option>
+                        <option value="bañoPel">Baño y Peluqueria</option>
+                        <option value="bañoHidra">Baño hidratante</option>
+                        <option value="uñas">Corte de uñas</option>
+                        <option value="oidos">Limpieza de oidos</option>
+                        <option value="restauracion">Restauracion de manto</option>
+                        <option value="dientes">Limpieza de dientes</option>
+                    </select>
+                    <input class="inputNumber" type="number" name="number4" id="number4">
+                </div>   -->
+        </div>
+        <button class="btn-cotizar"></button>  
+        <div class="cotizacion">
+        <!--  <p id="client"></p> --> 
+            <span class=" total"></span>  
+        </div>
+    </div>    
     <script src="./index.js"></script>
 </body>
 </html>

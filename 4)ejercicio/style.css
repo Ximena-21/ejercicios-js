@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 10px 0;
+    background: url(./images/fondo.jpg) no-repeat center center / cover;
+}
+
+.sectionPpal{
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.msmWelcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-family:'oleo script swash caps';
+    /* -webkit-text-stroke: 0.5px #efebf3; */
+    color: #e3c57f;
+    text-shadow: 1px 1px 2px #57564c;
+}
+
+img{
+    width: 100px;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+
+.containerBox{
+    margin-bottom: 20px;
+}
+
+/* .singIn {
+    font-size: 20px;
+    font-family: 'indie flower';
+    color: #0a3131;
+    font-weight: bold;
+} */
+
+.singIn_fullname{
+    border-style: dashed;
+    border-color: #fa9292;
+    background: #f5b8b8;
+    font-size: 20px;
+    font-family: 'indie flower';
+    color: #0a3131;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.container-cotizacion{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    width: 60%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectServices{
+    border-style: none;
+    /* border-color: #fa9292; */
+    background: #F9FFA4;
+   /*  box-shadow: 0px -15px 10px -15px #111; */
+    font-family: 'shadows into light';
+    font-weight: 700;
+    color: #f0358f;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.inputNumber{
+    width: 50px;
+    max-width: 100px;
+    border-style: none;
+    /* border-color: #fa9292; */
+    background: #F9FFA4;
+   /*  box-shadow: 0px -15px 10px -15px #111; */
+    font-family: 'shadows into light';
+    font-weight: 700;
+    color: #f0358f;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container-Services{
+    width: 90%;
+    display: flex;
+    gap: 3px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn-cotizar{
+    width: 60px;
+    height: 60px;
+    background: url(./images/huella\ \(2\).png) no-repeat center center / cover;
+    border-radius: 60px;
+    border-style: none;
+    border-color: #55D8C1;
+    box-shadow: 0px 8px 16px 0px #005555;
+    cursor: pointer;
+}
+
+.btn-cotizar:hover {
+    background-color: #169e95;
+}
+
+.btn-cotizar:active {
+  background-color: #169e95;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.cotizacion{
+    width: 200px;
+    max-width: 500px;
+    background: linear-gradient(207.8deg, #edf4f5 16.69%, #B4FF9F 100%);
+    font-family: 'indie flower';
+    font-weight: 700;
+    font-size: 16px;
+   /*  padding: 10px; */
+    text-align: center;
+    margin-top: 5px;
+}

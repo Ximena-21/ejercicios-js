@@ -1,5 +1,7 @@
 const cotizar = document.querySelector('.btn-cotizar')
 const txtCotizacion = document.querySelector('.cotizacion')
+const inputName = document.querySelector('.singIn_fullname')
+/* const nameClient = document.querySelector('#client') */
 const services1 = document.querySelector('#services1')
 const services2 = document.querySelector('#services2')
 const services3 = document.querySelector('#services3')
@@ -16,8 +18,6 @@ const pUñas = 5000
 const pOidos = 6000
 const pRest = 25000
 const pDientes = 5000
-
-
 
 
 
@@ -60,6 +60,17 @@ function calcServices(selectorActual,numberServices){
 }
 
 
+/* function putName (){
+
+    const name = (inputName.value)
+    nameClient.textContent = name
+
+    /*ESTA FUNCION ME SIRVE PARA INGRESAR ALGO EN EL INPUT Y QUE SE REESCRIBA AFUERA
+}
+
+inputName.addEventListener('input',putName)
+ */
+
 function totalCotizacion (){
     
     
@@ -67,12 +78,27 @@ function totalCotizacion (){
     const totalServicio2 = calcServices(services2.value, Number(cantidad2.value))
     const totalServicio3 = calcServices(services3.value, Number(cantidad3.value))
     const totalServicio4 = calcServices(services4.value, Number(cantidad4.value))
+
+    const name = (inputName.value)
+    
+    console.log(name)
     
     let total = totalServicio1 + totalServicio2 + totalServicio3 + totalServicio4
     
-    txtCotizacion.textContent = total
+    /*  const msmCotizacion = name + "tu cotizacion es" + total */
+    
+    const msmCotizacion = (name + " " 
+    + "tu cotizacion es: " + " " 
+    + (services1.value) + " " + totalServicio1 + " " 
+    + (services2.value) + " " + totalServicio2 + " " 
+    +(services3.value) + " " + totalServicio3 + " " 
+    + (services4.value) + " " + totalServicio4 + " " 
+    + "Total Compra " + total)
+
+    txtCotizacion.textContent = msmCotizacion
     
 }
+
 
 cotizar.addEventListener('click', totalCotizacion)
 
