@@ -79,23 +79,33 @@ function totalCotizacion (){
     const totalServicio3 = calcServices(services3.value, Number(cantidad3.value))
     const totalServicio4 = calcServices(services4.value, Number(cantidad4.value))
 
-    const name = (inputName.value)
+    const userName = (inputName.value)
     
-    console.log(name)
+    console.log(userName)
     
     let total = totalServicio1 + totalServicio2 + totalServicio3 + totalServicio4
     
     /*  const msmCotizacion = name + "tu cotizacion es" + total */
-    
-    const msmCotizacion = (name + " " 
-    + "tu cotizacion es: " + " " 
-    + (services1.value) + " " + totalServicio1 + " " 
-    + (services2.value) + " " + totalServicio2 + " " 
-    +(services3.value) + " " + totalServicio3 + " " 
-    + (services4.value) + " " + totalServicio4 + " " 
-    + "Total Compra " + total)
+    let message = userName + " " + "tu cotizacion es: "
 
-    txtCotizacion.textContent = msmCotizacion
+    if(totalServicio1 > 0 ){
+        message = message + " " + (services1.value) + " " + totalServicio1 
+    }
+    if(totalServicio2 > 0 ){
+        message = message + " " +  (services2.value) + " " + totalServicio2 
+    }
+    if(totalServicio3 > 0 ){
+        message = message + " " +  (services3.value) + " " + totalServicio3 
+    }
+    if(totalServicio4 > 0 ){
+        message = message + " " +  (services4.value) + " " + totalServicio4 
+    }
+
+    txtCotizacion.textContent = message + " " + "Total compra " + " " + total
+
+  /*   const msmCotizacion = (userName + " " + "tu cotizacion es: " + " " + (services1.value) + " " + totalServicio1 + " " + (services2.value) + " " + totalServicio2 + " " +(services3.value) + " " + totalServicio3 + " " + (services4.value) + " " + totalServicio4 + " " + "Total Compra " + total) */
+
+    /* txtCotizacion.textContent = msmCotizacion */
     
 }
 
