@@ -18,7 +18,7 @@ const pUñas = 5000
 const pOidos = 6000
 const pRest = 25000
 const pDientes = 5000
-
+const vacio = 0
 
 
 function calcServices(selectorActual,numberServices){
@@ -26,7 +26,11 @@ function calcServices(selectorActual,numberServices){
     /*    se establecen dos parametros para la funcion, los cuales se declararan en la funcion de totalcotizacion, para que esta se ejecute segun el caso que se presente
     */
    
-   let precioServicesActual  
+   let precioServicesActual 
+
+   if(selectorActual === 'ninguno'){
+    precioServicesActual = (vacio*numberServices)
+    }
    
    if(selectorActual === 'bañoSeco'){
        precioServicesActual = (pBañoSec*numberServices)
@@ -84,6 +88,8 @@ function totalCotizacion (){
     console.log(userName)
     
     let total = totalServicio1 + totalServicio2 + totalServicio3 + totalServicio4
+
+    console.log(total)
     
     /*  const msmCotizacion = name + "tu cotizacion es" + total */
     let message = userName + " " + "tu cotizacion es: "
