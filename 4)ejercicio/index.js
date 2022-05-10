@@ -64,16 +64,19 @@ function calcServices(selectorActual,numberServices){
 }
 
 
-/* function putName (){
-
-    const name = (inputName.value)
-    nameClient.textContent = name
-
-    /*ESTA FUNCION ME SIRVE PARA INGRESAR ALGO EN EL INPUT Y QUE SE REESCRIBA AFUERA
+/* function diccionarioDeServicios = {
+    pBañoSec = 'Baño Seco'
+    pBañoIns = 'Insecticida'
+    pBañoPel = 'Baño y Peluqueria'
+    pBañoHid = 'Hidratación'
+    pUñas = 'Corte de Uñas'
+    pOidos = 'Limpieza de Oidos'
+    pRest = 'Restauracion de manto'
+    pDientes = 'Limpieza de dientes'
 }
-
-inputName.addEventListener('input',putName)
  */
+
+
 
 function totalCotizacion (){
     
@@ -201,4 +204,13 @@ cotizar.addEventListener('click', totalCotizacion)
 }
  */
 
+/* function putName (){
 
+    const name = (inputName.value)
+    nameClient.textContent = name
+
+    /*ESTA FUNCION ME SIRVE PARA INGRESAR ALGO EN EL INPUT Y QUE SE REESCRIBA AFUERA
+}
+
+inputName.addEventListener('input',putName)
+ */
