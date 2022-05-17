@@ -230,7 +230,8 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Op
 </ul>
 
 
-# Loops 
+# Loops (Ciclos)
+
 
 <P>
 Los bucles pueden ejecutar un bloque de código varias veces. JavaScript admite diferentes tipos de bucles:
@@ -244,3 +245,87 @@ Los bucles pueden ejecutar un bloque de código varias veces. JavaScript admite 
     <li>do/while - </li>también recorre un bloque de código mientras se cumple una condición específica
 </ul>    
 
+# Objetos
+
+<p>
+Un objeto es una colección de datos relacionados y/o funcionalidad (que generalmente consta de algunas variables y funciones, que se denominan propiedades y métodos cuando están dentro de objetos).
+</p>
+
+### _metodo_
+
+<p>
+Propiedad que lleva como valor una funcion.
+</p>
+
+#### ___¿Qué es “this” (este)?___
+
+
+<span>
+La palabra clave this se refiere al objeto actual en el que se está escribiendo el código, por lo que en este caso this es equivalente a miAuto.
+</span>
+
+## __funcion constructora__
+
+<p>
+Generar un templeit de una objeto, con metodos: se usa una funcion, que va a tener como parametro las propiedades de mi objeto. Para generar un objeto nuevo con relacion al templeit anterior, usando un nuevo operador de nombre new (que va a generar una nueva instancia, es decir qgenera un objeto de otro objeto)
+</p>
+
+# Metodos de recorridos de Arrays
+
+<span>
+dos : unos nos ayuda a mutar el conatenido del array, y otro nos ayuda a recorrer el contenido del array
+</span>
+
+<ol>
+    <li>
+    filter
+        <p>
+        filtrar, validar si algo es verdad o falso, y lo va a generar en un nuevo array
+        </p>
+    </li>
+    <li>
+    map 
+        <p>
+         mapea todo el contenido del array, generando un nuevo array solo con el contenido que se le solicito, del array principal 
+        </p>
+    </li>
+    <li>
+    find() 
+        <p>
+         validar un true o false, en un nuevo array de lo que le hemos dicho que busque  
+        </p>
+    </li>
+    <li>
+    forEach() 
+        <p>
+         no me genera un nuevo array, por lo cual debo llamar primero mi array, seguido del metodo, y dentro la funcion de lo que quiero que me regrese  
+        </p>
+    </li>
+    <li>
+    some() 
+        <p>
+        retorna "true" o "false" si hay elementos en un array que cumplan con la condición indicada
+        </p>
+    </li>
+    <li>
+    .push() 
+        <p>
+         os permite agregar uno o más elementos al final de un array.
+        </p>
+    </li>
+    <li>
+    .shift()
+        <p>
+         eliminar el primer elemento de un array, es decir, elimina el elemento que esté en el índice 0. 
+        </p>
+    </li>
+    <li>
+    .pop()
+        <p>
+         eliminar el ultimo elemento de un array. 
+        </p>
+    </li>
+</ol>
+
+`` alt gr + ]}
+``

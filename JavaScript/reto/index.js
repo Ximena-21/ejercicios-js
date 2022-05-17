@@ -6,9 +6,13 @@ var opt3 = 'papel';
 
 function jugar(jugador,pc){
 
-    if ((jugador === opt2 && pc === opt3) || (jugador === opt2 && pc === opt1) || (jugador === opt1 && pc === opt3)) {    
+    if ((jugador === opt2 && pc === opt3) 
+    || (jugador === opt2 && pc === opt1) 
+    || (jugador === opt1 && pc === opt3)) {    
         console.log('Ganaste')
-    } else if ((jugador === opt1 && pc === opt1) || (jugador === opt2 && pc === opt2) || (jugador === opt3 && pc === opt3)) {    
+    } else if ((jugador === opt1 && pc === opt1) 
+    || (jugador === opt2 && pc === opt2) 
+    || (jugador === opt3 && pc === opt3)) {    
         console.log('Empate');
     } else {
         console.log('Perdiste')
